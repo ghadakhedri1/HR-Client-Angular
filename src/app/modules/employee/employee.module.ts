@@ -2,11 +2,10 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { EmployeeRoutingModule } from './employee-routing.module';
-import { AllEmployeesComponent } from './components/all-employees/all-employees.component';
-import { AddEmployeesComponent } from './components/add-employees/add-employees.component';
-import { EditEmployeesComponent } from './components/edit-employees/edit-employees.component';
-import { SharedModule } from 'src/app/shared/shared.module';
 import { RouterModule } from '@angular/router';
+import { AllEmployeesComponent } from './pages/all-employees/all-employees.component';
+import { AddEmployeesComponent } from './pages/add-employees/add-employees.component';
+import { EditEmployeesComponent } from './pages/edit-employees/edit-employees.component';
 
 @NgModule({
   declarations: [

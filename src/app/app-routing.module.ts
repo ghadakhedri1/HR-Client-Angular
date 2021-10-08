@@ -19,6 +19,13 @@ const routes: Routes = [
         (module) => module.EmployeeModule
       ),
   },
+  {
+    path: 'holidays',
+    loadChildren: () =>
+      import('./modules/holidays/holidays.module').then(
+        (module) => module.HolidaysModule
+      ),
+  },
   { path: '**', redirectTo: 'home', pathMatch: 'full' },
 ];
 

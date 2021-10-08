@@ -26,6 +26,13 @@ const routes: Routes = [
         (module) => module.HolidaysModule
       ),
   },
+  {
+    path: 'departments',
+    loadChildren: () =>
+      import('./modules/department/department.module').then(
+        (module) => module.DepartmentModule
+      ),
+  },
   { path: '**', redirectTo: 'home', pathMatch: 'full' },
 ];
 

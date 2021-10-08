@@ -33,6 +33,11 @@ const routes: Routes = [
         (module) => module.DepartmentModule
       ),
   },
+  {
+    path: 'jobs',
+    loadChildren: () =>
+      import('./modules/job/job.module').then((module) => module.JobModule),
+  },
   { path: '**', redirectTo: 'home', pathMatch: 'full' },
 ];
 

@@ -16,7 +16,7 @@
   </li>
   <li class="header">-- Main</li>
   <li class="active">
-    <a href="#">
+    <a routerLink="home">
       <span>Dashboard</span>
     </a>
   </li>
@@ -33,15 +33,9 @@
         <a routerLink="/employee/add-employee">Add Employee</a>
       </li>
       <li>
-        <a routerLink="/employee/add-employee">Edit Employee</a>
+        <a routerLink="/employee/edit-employee">Edit Employee</a>
       </li>
     </ul>
-  </li>
-  <li>
-    <a href="#" onClick="return false;" class="menu-toggle">
-      <i data-feather="clipboard"></i>
-      <span>Leave Management</span>
-    </a>
   </li>
   <li>
     <a href="#" onClick="return false;" class="menu-toggle">
@@ -91,6 +85,77 @@
       </li>
       <li>
         <a routerLink="/jobs/applicant-list">Applicant List</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="#" onClick="return false;" class="menu-toggle">
+      <i data-feather="briefcase"></i>
+      <span>Projects</span>
+    </a>
+    <ul class="ml-menu">
+      <li>
+        <a routerLink="/project/projects">All Projects</a>
+      </li>
+      <li>
+        <a routerLink="/project/add-project">Add Project</a>
+      </li>
+      <li>
+        <a routerLink="/project/edit-project">Edit Project</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="#" onClick="return false;" class="menu-toggle">
+      <i data-feather="book-open"></i>
+      <span>Attendance</span>
+    </a>
+    <ul class="ml-menu">
+      <li>
+        <a routerLink="/attendance/today-attendance">Today Attendance</a>
+      </li>
+      <li>
+        <a routerLink="/attendance/employee-attendance">Employee Attendance</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="#" onClick="return false;" class="menu-toggle">
+      <i data-feather="user"></i>
+      <span>Clients</span>
+    </a>
+    <ul class="ml-menu">
+      <li>
+        <a routerLink="/client/clients">All Clients</a>
+      </li>
+      <li>
+        <a routerLink="/client/add-client">Add Client</a>
+      </li>
+      <li>
+        <a routerLink="/client/edit-client">Edit Client</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="#" onClick="return false;" class="menu-toggle">
+      <i data-feather="clipboard"></i>
+      <span>Leave Management</span>
+    </a>
+    <ul class="ml-menu">
+      <li>
+        <a routerLink="/leave/leave-requests">All Leave Request</a>
+      </li>
+      <li>
+        <a href="pages/leave/leave-balance.html">Leave Balance</a>
+      </li>
+      <li>
+        <a routerLink="/leave/add-leave">New Leave Request</a>
+      </li>
+      <li>
+        <a routerLink="/leave/edit-leave">Edit Leave Request</a>
+      </li>
+      <li>
+        <a routerLink="/leave/leave-types">Leave Types</a>
       </li>
     </ul>
   </li>
